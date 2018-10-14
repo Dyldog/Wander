@@ -21,6 +21,7 @@
 		6249BA15214E3B2700148DBC /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249BA14214E3B2700148DBC /* Journey.swift */; };
 		62DE47BF2172E92600D68B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DE47BE2172E92600D68B30 /* Main.storyboard */; };
 		62DE47C12172E92F00D68B30 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE47C02172E92F00D68B30 /* MainViewController.swift */; };
+		62DE47C42172EABE00D68B30 /* Pulley.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DE47C32172EABE00D68B30 /* Pulley.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		6249BA14214E3B2700148DBC /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		62DE47BE2172E92600D68B30 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		62DE47C02172E92F00D68B30 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		62DE47C32172EABE00D68B30 /* Pulley.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pulley.framework; path = Carthage/Build/iOS/Pulley.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DE47C42172EABE00D68B30 /* Pulley.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				6249B9F3214CB16900148DBC /* Wander */,
 				6249B9F2214CB16900148DBC /* Products */,
+				62DE47C22172EABD00D68B30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +117,14 @@
 				6249BA14214E3B2700148DBC /* Journey.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		62DE47C22172EABD00D68B30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62DE47C32172EABE00D68B30 /* Pulley.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +359,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CW3378X23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Wander/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,6 +381,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CW3378X23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Wander/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

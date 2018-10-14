@@ -1,2 +1,4 @@
 Wander.xcodeproj/xcuserdata
 DerivedData
+Carthage/Build
+Carthage/Checkouts
